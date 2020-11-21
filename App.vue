@@ -15,9 +15,7 @@ import WebServiceScreen from "./screens/WebService.vue";
 import DatabaseScreen from "./screens/Database.vue";
 
 const Tabs = createMaterialTopTabNavigator({
-  Camera: HomeScreen,
-  API: WebServiceScreen,
-  DB: DatabaseScreen
+  AlmacenamientoDatos: DatabaseScreen
 });
 
 const StackNavigator = createStackNavigator(
@@ -35,7 +33,7 @@ const StackNavigator = createStackNavigator(
         color: "white"
       },
       headerStyle: {
-        backgroundColor: "#0288D1"
+        backgroundColor: "#088A85"
       }
     }
   }

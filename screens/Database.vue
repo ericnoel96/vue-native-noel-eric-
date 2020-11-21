@@ -34,10 +34,10 @@ export default {
     async add() {
       try {
         if (this.listaVainas.includes(this.text)) {
-          alert("Error repetido");
+          alert("Ya se encuentra registrado");
         } else {
           await AsyncStorage.setItem(this.text, this.text);
-          alert(this.text + " agregado!");
+          alert(this.text + " agregado con exito!");
           this.listaVainas.push(this.text);
           console.log(this.listaVainas);
           this.text = "";
@@ -80,7 +80,7 @@ export default {
 
 <style>
 .container {
-  background-color: #333;
+  background-color: #F6E3CE;
   flex-direction: row;
   padding: 20px;
 }
@@ -100,7 +100,7 @@ export default {
 }
 .button {
   flex: 1;
-  background-color: #008080;
+  background-color: #A4A4A4;
   margin-left: 5px;
   align-items: center;
   justify-content: center;
